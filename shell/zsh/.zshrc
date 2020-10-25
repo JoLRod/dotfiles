@@ -20,4 +20,13 @@ fpath=("$DOTLY_PATH/shell/zsh/themes" "$DOTLY_PATH/shell/zsh/completions" $fpath
 autoload -Uz promptinit && promptinit
 prompt codelytv
 
+# sdo() sudo zsh -c "$functions[$1]" "$@"
+
 source "$DOTLY_PATH/shell/zsh/bindings/reverse_search.zsh"
+
+export PATH=/usr/local/bin:$PATH
+
+
+export NVM_DIR="/Users/rodpumma/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+export PATH="/usr/local/opt/python@3.9/bin:$PATH"

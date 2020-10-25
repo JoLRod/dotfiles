@@ -1,0 +1,68 @@
+" source ~/.vimrc
+source ~/.vimrc.keymap
+set ignorecase
+set smartcase
+set scrolloff=3
+set ideajoin
+
+" Emulate easymotion vim plugin on webstorm
+set easymotion
+" set surround
+" set multiple-cursors
+
+set visualbell
+set noerrorbells
+set showmode
+" nmap <leader>ss <Plug>(easymotion-s2)
+" nmap <leader>t <Plug>(easymotion-t2)
+nnoremap <leader>w :action SaveAll<cr>
+
+
+" REload ideavim config
+nnoremap <leader>re :source ~/.ideavimrc<cr>
+
+" Build & Run
+" nnoremap <leader>cc :action CleanGradleProject<cr>
+" nnoremap <leader>ss :action Android.SyncProject<cr>
+
+" Debug
+" Run Test
+nnoremap <leader>rt :action Run<cr>
+" nnoremap <leader>dd :action Debug<cr>
+" Breakpoint toggle, add or remove editor breakpoint
+nnoremap <leader>bb :action ToggleLineBreakpoint<cr>
+" ONLY the current editor tab, close others
+nnoremap <leader>only :action CloseAllEditorsButActive<cr>
+" CLear, close all editors tabs
+nnoremap <leader>cl :action CloseAllEditors<cr>
+
+" Window
+" open vertical/horizontal editor on same window/tab
+" nnoremap <leader>sv :action SplitVertically<cr>
+nnoremap <leader>hsp :action SplitHorizontally<cr>
+nnoremap <leader>vsp :action SplitVertically<cr>
+
+" Git
+"show git history
+nnoremap <leader>gh :action LocalHistory.ShowHistory<cr>
+
+" Refactor
+nnoremap <leader>R :action Refactorings.QuickListPopupAction<cr>
+nnoremap <leader>L :action ReformatCode<cr>
+" nnoremap <leader>ic :action InspectCode<cr>
+" nnoremap <leader>rm :action ExtractMethod<cr>
+" nnoremap <leader>rn :action RenameElement<cr>
+" nnoremap <leader>rf :action RenameFile<cr>
+" nnoremap <leader>rv :action IntroduceVariable<cr>
+" nnoremap <leader>rs :action ExtractSuperclass<cr>
+" nnoremap <leader>ri :action Inline<cr>
+
+" Tool
+" nnoremap <leader>fp :action FindInPath<cr>
+" nnoremap <leader>fu :action FindUsages<cr>
+" nnoremap <leader>su :action ShowUsages<cr>
+" nnoremap <leader>ga :action GotoAction<cr>
+" nnoremap <leader>lc :action ActivateLogcatToolWindow<cr>
+" nnoremap <leader>sh :action ActivateTerminalToolWindow<cr>
+" nnoremap [e :action GotoNextError<cr>
+" nnoremap ]e :action GotoPreviousError<cr>set ideajoin
